@@ -32,7 +32,7 @@ matlab:
 	@matlab -nosplash -nodesktop -nodisplay -nojvm $(STUDENT_OPT) -r $(MATLAB_SCRIPT)
 
 octave:
-	@echo "Octave: Generating Hamming ECC coder/decoder verilog code: $(OUTFILE)"
+	@echo "GNU Octave: Generating Hamming ECC coder/decoder verilog code: $(OUTFILE)"
 	@octave --silent --no-gui --no-window-system --traditional $(SCRIPT)
 
 clean:

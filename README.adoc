@@ -14,8 +14,20 @@ Optional adding atop Hamming Coding extra parity bit we have a Single Error Corr
 You need installed on your host:
 
 * MatLab
++
 or
++
 * GNU Octave
+
+The GNU Octave required additional toolboxes, for RHEL/CentOS 6/7 please type:
+```
+sudo yum install -y  octave-devel
+octave
+octave> pkg install -forge control
+octave> pkg install -forge signal
+octave> pkg install -forge -verbose communications
+```
+to install required toolboxes.
 
 === Installing
 
@@ -32,14 +44,19 @@ or
   make octave
 
 
+== ToDo
+
+* Verilog module naming according to the data width
+
+
 == Contributors
 
-Please read CONTRIBUTING.md[CONTRIBUTING.md] for details on our code of conduct, and the process for submitting pull requests to us.
+Please read link:CONTRIBUTING.adoc[] for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 == License
 
-This project is licensed under the MIT License - see the LICENSE[LICENSE] file for details
+This project is licensed under the MIT License - see the link:LICENSE[] file for details
 
 
 == References
