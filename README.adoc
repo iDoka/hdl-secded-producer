@@ -9,7 +9,7 @@ Optional adding atop Hamming Coding extra parity bit we have a Single Error Corr
 == Getting Started
 
 
-=== Prerequisities
+=== Prerequisites
 
 You need installed on your host:
 
@@ -19,15 +19,15 @@ or
 +
 * GNU Octave
 
-The GNU Octave required additional toolboxes, for RHEL/CentOS 6/7 please type:
+The GNU Octave required additional toolboxes, under RHEL/CentOS 6/7 systems please type for installs required prerequisites:
 ```
-sudo yum install -y  octave-devel
-octave
-octave> pkg install -forge control
-octave> pkg install -forge signal
-octave> pkg install -forge -verbose communications
+$ sudo yum install -y  octave-devel
+$ octave
+octave:> pkg install -forge control
+octave:> pkg install -forge signal
+octave:> pkg install -forge -verbose communications
 ```
-to install required toolboxes.
+
 
 === Installing
 
