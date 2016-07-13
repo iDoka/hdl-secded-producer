@@ -63,7 +63,8 @@ This project is licensed under the MIT License - see the link:LICENSE[] file for
 
 * https://en.wikipedia.org/wiki/Hamming_code[Hamming codes] and https://en.wikipedia.org/wiki/Hamming_code#Hamming_codes_with_additional_parity_.28SECDED.29[SECDED section] (EN)
 * https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D0%A5%D1%8D%D0%BC%D0%BC%D0%B8%D0%BD%D0%B3%D0%B0[Hamming codes] (RU)
-* http://www.xilinx.com/support/documentation/application_notes/xapp383.pdf[XAPP383: Single Error Correction and Double Error Detection]
+* http://www.xilinx.com/support/documentation/application_notes/xapp383.pdf[XAPP383: Single Error Correction and Double Error Detection in a CPLD]
+* http://www.xilinx.com/support/documentation/application_notes/xapp645.pdf[XAPP645: Single Error Correction and Double Error Detection in a Virtex devices]
 * https://en.wikipedia.org/wiki/ECC_memory[Error-correcting code memory (ECC memory)]
 * http://www.hackersdelight.org/ecc.pdf[ERROR CORRECTING CODES (PDF)]
 * http://www.mathworks.com/help/comm/ref/hammgen.html[function hammgen() - Produce parity-check and generator matrices for Hamming code](EN)
