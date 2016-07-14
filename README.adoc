@@ -49,18 +49,19 @@ or
 ==== Naming conventions and Integrators guide
 
 
-* *(2^m-1, 2^m-m-1, 3)* - for standard Hamming codes
-* *(2^m, 2^m-m-1, 4)* - for SED/DED codes
+* *(2^m^-1, 2^m^-m-1, 3)* - for standard Hamming codes
+* *(2^m^, 2^m^-m-1, 4)* - for SED/DED codes
 * Using template *(n,k,d)* where is:
 ** *n* = d + k + m; where:
 *** m - extracted from Hammgen() function, in fact this is width of correction bits
 ** *k* - user data width (which should be under ECC protection)
 ** *d* = 3 + SECDED_parity_bit_if_used; where 3 - is Hamming distance
 
-The module named with following sheme:
+.The module named with following sheme:
+
 * *HammingCoder_n_k_d*
 * *HammingDecoder_n_k_d*
-* E.g.:
+* e.g.:
 ** ..72_64_4
 ** ..71_64_3
 ** ..39_32_4
@@ -68,7 +69,8 @@ The module named with following sheme:
 ** ..26_20_4
 ** ..25_20_3
 
-File named with following sheme:
+.File named with following sheme:
+
 * *HammingCode_kbit.v*
 e.g.: HammingCode_20bit.v, HammingCode_64bit.v, etc.
 
