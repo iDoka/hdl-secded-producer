@@ -38,11 +38,15 @@ Not needed to install
 === Usage
 
 Just type (by default run matlab target):
+
   make
 
 or if you can forcibly specify target:
+
   make matlab
+
 or
+
   make octave
 
 
@@ -56,6 +60,7 @@ or
 *** m - extracted from Hammgen() function, in fact this is width of correction bits
 ** *k* - user data width (which should be under ECC protection)
 ** *d* = 3 + SECDED_parity_bit_if_used; where 3 - is Hamming distance
+
 
 .The module named with following sheme:
 
