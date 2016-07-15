@@ -56,10 +56,10 @@ or
 * *(2^m^-1, 2^m^-m-1, 3)* - for standard Hamming codes
 * *(2^m^, 2^m^-m-1, 4)* - for SED/DED codes
 * Using template *(n,k,d)* where is:
-** *n* = d + k + m; where:
-*** m - extracted from Hammgen() function, in fact this is width of correction bits
-** *k* - user data width (which should be under ECC protection)
-** *d* = 3 + SECDED_parity_bit_if_used; where 3 - is Hamming distance
+** __*n* = d + k + m__; where:
+*** _m_ - extracted from Hammgen() function, in fact this is width of correction bits
+** *_k_* - user data width (which should be under ECC protection)
+** __*d* = 3 + SECDED_parity_bit_if_used__; where 3 - is Hamming distance
 
 
 .The module named with following sheme:
@@ -76,8 +76,8 @@ or
 
 .File named with following sheme:
 
-* __HammingCode_**k***bit.v__
-e.g.: HammingCode_**20**bit.v, HammingCode_**64**bit.v, etc.
+* __HammingCode_**k**bit.v__
+* e.g.: __HammingCode_**20**bit.v__, __HammingCode_**64**bit.v__, etc.
 
 
 == ToDo
