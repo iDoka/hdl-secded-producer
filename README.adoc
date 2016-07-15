@@ -64,8 +64,8 @@ or
 
 .The module named with following sheme:
 
-* *HammingCoder_n_k_d*()
-* *HammingDecoder_n_k_d*()
+* __HammingCoder_**n_k_d**()__
+* __HammingDecoder_**n_k_d**()__
 * e.g.:
 ** ..72_64_4
 ** ..71_64_3
