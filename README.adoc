@@ -41,7 +41,7 @@ Just type (by default run matlab target):
 
   make
 
-or if you can forcibly specify target:
+or if you can forcibly specify target (if you decide which tool will be use):
 
   make matlab
 
@@ -76,8 +76,8 @@ or
 
 .File named with following sheme:
 
-* *HammingCode_kbit.v*
-e.g.: HammingCode_20bit.v, HammingCode_64bit.v, etc.
+* __HammingCode_**k***bit.v__
+e.g.: HammingCode_**20**bit.v, HammingCode_**64**bit.v, etc.
 
 
 == ToDo
