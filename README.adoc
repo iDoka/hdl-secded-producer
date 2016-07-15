@@ -64,8 +64,8 @@ or
 
 .The module named with following sheme:
 
-* *HammingCoder_n_k_d*
-* *HammingDecoder_n_k_d*
+* *HammingCoder_n_k_d*()
+* *HammingDecoder_n_k_d*()
 * e.g.:
 ** ..72_64_4
 ** ..71_64_3
@@ -77,7 +77,10 @@ or
 .File named with following sheme:
 
 * __HammingCode_**k**bit.v__
-* e.g.: __HammingCode_**20**bit.v__, __HammingCode_**64**bit.v__, etc.
+* e.g.:
+** __HammingCode_**20**bit.v__
+** __HammingCode_**64**bit.v__
+** etc..
 
 
 == ToDo
