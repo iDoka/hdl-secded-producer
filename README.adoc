@@ -55,11 +55,11 @@ or
 
 * *(2^m^-1, 2^m^-m-1, 3)* - for standard Hamming codes
 * *(2^m^, 2^m^-m-1, 4)* - for SED/DED codes
-* Using template *(n,k,d)* where is:
-** __*n* = d + k + m__; where:
+* Using template **__(n,k,d)__** where is:
+** __**n** = d + k + m__; where:
 *** _m_ - extracted from Hammgen() function, in fact this is width of correction bits
 ** *_k_* - user data width (which should be under ECC protection)
-** __*d* = 3 + SECDED_parity_bit_if_used__; where 3 - is Hamming distance
+** __**d** = 3 + SECDED_parity_bit_if_used__; where 3 - is Hamming distance
 
 
 .The module named with following sheme:
