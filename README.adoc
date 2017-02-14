@@ -1,7 +1,19 @@
 = HDL SEC/DED Producer
+Dmitry Murzinov <kakstattakim@gmail.com>
+v1.0, 21.08.2016
+:doctype: article
+:lang: en
+:stem:
+:grid: all
+:align: center
+:imagesdir: img
+:homepage: http://idoka.ru
+
 
 MATLAB/Octave generator of Hamming ECC coder/decoder. Output format is Verilog HDL.
 Optional adding atop Hamming Coding extra parity bit we have a Single Error Correction/Double Error Detection (SEC/DED) algorithm.
+
+NOTE: Russian description available here: http://idoka.ru/verilog-secded-generator/
 
 == Synopsis
 
