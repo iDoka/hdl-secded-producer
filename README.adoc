@@ -8,12 +8,24 @@ v1.0, 21.08.2016
 :align: center
 :imagesdir: img
 :homepage: http://idoka.ru
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
 
 
 MATLAB/Octave generator of Hamming ECC coder/decoder. Output format is Verilog HDL.
 Optional adding atop Hamming Coding extra parity bit we have a Single Error Correction/Double Error Detection (SEC/DED) algorithm.
 
-NOTE: Russian description available here: http://idoka.ru/verilog-secded-generator/
+TIP: Russian description available here: http://idoka.ru/verilog-secded-generator/
+
+CAUTION: Now available online version of generator http://idoka.ru/verilog-ecc-generator/
 
 == Synopsis
 
