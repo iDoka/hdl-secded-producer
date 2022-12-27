@@ -12,7 +12,7 @@
 
 clear all
 
-K = 4; % data bits
+K = 64; % data bits
 USE_POLY = 0;
 POLY = [0 1 0 0 1];
 
@@ -20,7 +20,7 @@ FILE='HammingCode.v';
 
 % calculate correction bits
 % 1.25 - still magic numbers
-m = ceil(log2(1.25*K));
+m = log2(K)+1;%ceil(log2(1.25*K));
 
 if USE_POLY == 1
   [h,g,n,k] = hammgen(m, POLY);
@@ -93,7 +93,8 @@ end
 fprintf(fid,'\n');
 
 for kk = 1:K
-  fprintf(fid,'  assign DOUT[%02d] = D[%02d] ^',kk-1,kk-1);
+  fprintf(fid,'  assign DOUT[%02d] = D[%02d] ^(',kk-1,kk-1);
+  %fprintf(fid,'(S==%02d%''h%X); ',m,g(kk));
   and_flag = 0;
   for mm = 1:m
     if g(kk,mm) == 1
@@ -102,11 +103,18 @@ for kk = 1:K
       else
         fprintf(fid,' & ');
       end
-      if kk<11 fprintf(fid,' '); end
-      fprintf(fid,'S[%d]',mm-1);
+    else
+      if and_flag == 0
+        fprintf(fid,'!');
+        and_flag = 1;
+      else
+        fprintf(fid,' & !');
+      end
     end
+    if kk<11 fprintf(fid,' '); end
+    fprintf(fid,'S[%d]',mm-1);
   end
-  fprintf(fid,';\n');
+  fprintf(fid,');\n');
 end
 fprintf(fid,'\n');
 
@@ -118,4 +126,4 @@ fprintf(fid,'\nendmodule\n');
 
 fclose(fid);
 
-quit
+%quit
